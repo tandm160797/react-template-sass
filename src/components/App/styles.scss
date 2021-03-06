@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app {
+	&__heading {
+		text-align: center;
+		color: #87e474;
+	}
+}

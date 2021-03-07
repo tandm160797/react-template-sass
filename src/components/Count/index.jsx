@@ -1,7 +1,7 @@
 import { decrease, increase } from '$redux-toolkit/slice/count';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './styles.scss';
+import './styles';
 
 const Count = () => {
 	const dispatch = useDispatch();

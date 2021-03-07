@@ -25,7 +25,7 @@ const useMagicColor = () => {
 			clearInterval(magicColorIntervalID);
 		};
 	}, []);
-	return { color };
+	return color;
 };
 
-export default useMagicColor;
+export { useMagicColor };

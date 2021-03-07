@@ -1,6 +1,6 @@
-import useMagicColor from '$hooks/useMagicColor';
+import { useMagicColor } from '$hooks';
 import React from 'react';
-import './styles.scss';
+import './styles';
 
 const MagicBox = () => {
   const { color } = useMagicColor();

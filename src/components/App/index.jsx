@@ -1,7 +1,7 @@
 import Count from '$components/Count';
 import MagicBox from '$components/MacgicBox';
 import React from 'react';
-import './styles.scss';
+import './styles';
 
 const App = () => {
 	return (

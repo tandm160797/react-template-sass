@@ -2,7 +2,16 @@ var path = require('path');
 var DotenvWebPack = require('dotenv-webpack');
 var HtmlWebPackPlugin = require('html-webpack-plugin');
 
-var vendor = ['@reduxjs/toolkit', 'axios', 'prop-types', 'query-string', 'react', 'react-dom', 'react-redux'];
+var vendor = [
+	'@reduxjs/toolkit',
+	'axios',
+	'prop-types',
+	'query-string',
+	'react',
+	'react-dom',
+	'react-redux',
+	'add react-router-dom'
+];
 var webpackConfig = {
 	entry: {
 		bundle: './src/index.jsx',
@@ -31,7 +40,7 @@ var webpackConfig = {
 		]
 	},
 	resolve: {
-		extensions: ['.js', '.jsx'],
+		extensions: ['.js', '.jsx', '.scss'],
 		alias: {
 			'$redux-toolkit': path.resolve(__dirname, 'src/redux-toolkit'),
 			$components: path.resolve(__dirname, 'src/components'),
